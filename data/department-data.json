@@ -1,0 +1,125 @@
+{
+  "courses": [
+    {
+      "name": "Web Design and Technology",
+      "description": "HTML5, CSS3, JavaScript, AJAX, jQuery and Bootstrap for modern web development.",
+      "icon": "bi-globe2"
+    },
+    {
+      "name": "Programming Fundamentals",
+      "description": "Core programming concepts, variables, data types, operators and control structures.",
+      "icon": "bi-code-slash"
+    },
+    {
+      "name": "Data Structures",
+      "description": "Arrays, linked lists, stacks, queues, trees and algorithmic problem solving.",
+      "icon": "bi-diagram-3"
+    },
+    {
+      "name": "Database Management",
+      "description": "Database design, SQL, data organisation and information management.",
+      "icon": "bi-database"
+    },
+    {
+      "name": "Computer Architecture",
+      "description": "Computer organisation, processing, memory and input-output fundamentals.",
+      "icon": "bi-pc-display"
+    },
+    {
+      "name": "Artificial Intelligence",
+      "description": "Intelligent systems, reasoning, machine learning and problem-solving techniques.",
+      "icon": "bi-robot"
+    },
+    {
+      "name": "Cloud Computing",
+      "description": "Cloud platforms, virtualisation, deployment and distributed services.",
+      "icon": "bi-cloud"
+    },
+    {
+      "name": "Cyber Security",
+      "description": "Security principles, threats, cryptography and safe computing practices.",
+      "icon": "bi-shield-lock"
+    }
+  ],
+  "faculty": [
+    {
+      "name": "Dr. Ranjan Kumar Dash",
+      "role": "Head of Department",
+      "specialisation": "Distributed Computing, OptimizationAlgorithms, Parallel & Distributed Systems"
+    },
+    {
+      "name": "Dr. Subasish Mohapatra",
+      "role": "Assistant Professor",
+      "specialisation": "Distributed Systems, Web Technology and Software Development"
+    },
+    {
+      "name": "Dr Debasis Gountia",
+      "role": "Associate Professor",
+      "specialisation": "Cryptography, Algorithms and Foundations of Chip Design"
+    },
+    {
+      "name": "Ms. Swarna Lata Pati",
+      "role": "Assistant Professor",
+      "specialisation": "Healthcare System, Information Security"
+    }
+  ],
+  "notices": [
+    {
+      "date": "ACADEMIC",
+      "title": "Semester Examination Notice",
+      "description": "Add the verified examination schedule and related instructions here."
+    },
+    {
+      "date": "EVENT",
+      "title": "Technical Workshop",
+      "description": "Add details of upcoming workshops, seminars and student activities here."
+    },
+    {
+      "date": "STUDENT",
+      "title": "Project Registration",
+      "description": "Students can add verified project registration dates and guidelines here."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Library Management System",
+      "tech": "HTML, CSS, JavaScript and Database"
+    },
+    {
+      "name": "Smart Attendance System",
+      "tech": "Web Technologies and Database"
+    },
+    {
+      "name": "Hospital Management System",
+      "tech": "Java and Database"
+    },
+    {
+      "name": "AI Chatbot",
+      "tech": "Artificial Intelligence and NLP"
+    }
+  ],
+  "placements": [
+    {
+      "company": "TCS",
+      "count": "15"
+    },
+    {
+      "company": "Infosys",
+      "count": "12"
+    },
+    {
+      "company": "Wipro",
+      "count": "10"
+    },
+    {
+      "company": "Accenture",
+      "count": "9"
+    }
+  ],
+  "achievements": [
+    "State-level Hackathon Participation",
+    "National Coding Competition",
+    "Academic Excellence",
+    "Student Innovation Projects"
+  ]
+}

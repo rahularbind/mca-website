@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MCA Department Portal</title>
+    <meta
+      name="description"
+      content="MCA Department Portal with academic programmes, faculty, projects, notices and student information."
+    />
+    <meta
+      name="keywords"
+      content="MCA, department, courses, faculty, student projects"
+    />
+    <meta name="author" content="MCA Department" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home"
+          ><i class="bi bi-cpu me-2"></i>MCA Department</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNav"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#courses">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faculty">Faculty</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#placements">Placements</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#notices">Notices</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex gap-2 ms-lg-3 mt-3 mt-lg-0" id="accountLinks">
+            <a class="btn btn-outline-light btn-sm" href="login.html">Login</a
+            ><a class="btn btn-warning btn-sm" href="signup.html">Sign Up</a>
+          </div>
+          <button
+            id="logoutBtn"
+            class="btn btn-danger btn-sm ms-lg-2 mt-2 mt-lg-0 d-none"
+            type="button"
+          >
+            Logout
+          </button>
+        </div>
+      </div>
+    </nav>
+    <header id="home" class="hero">
+      <div class="container hero-content">
+        <span class="eyebrow">LEARN · INNOVATE · LEAD</span>
+        <h1>Master of Computer<br /><span>Applications</span></h1>
+        <p class="hero-lead">
+          Empowering future software engineers, problem-solvers and technology
+          leaders.
+        </p>
+        <a class="btn btn-warning btn-lg me-2" href="#courses"
+          >Explore Courses</a
+        ><a class="btn btn-outline-light btn-lg" href="#about">Discover More</a>
+        <p class="datetime mt-4 mb-0" id="datetime"></p>
+      </div>
+      <div class="hero-decoration"><i class="bi bi-code-slash"></i></div>
+    </header>
+    <div class="ticker">
+      <div class="container">
+        <i class="bi bi-megaphone-fill me-2"></i
+        ><span id="tickerText">Welcome to the MCA Department Portal</span>
+      </div>
+    </div>
+    <section class="quick-info">
+      <div class="container">
+        <div class="row g-3 text-center">
+          <div class="col-6 col-md-3">
+            <div class="info-item">
+              <i class="bi bi-people"></i><strong id="studentsCount">0</strong
+              ><span>Students</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="info-item">
+              <i class="bi bi-person-workspace"></i
+              ><strong id="facultyCount">0</strong><span>Faculty Members</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="info-item">
+              <i class="bi bi-briefcase"></i
+              ><strong id="placementCount">0%</strong
+              ><span>Placement Target</span>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="info-item">
+              <i class="bi bi-lightbulb"></i
+              ><strong id="projectsCount">0</strong><span>Projects</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section id="about" class="section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <span>WHO WE ARE</span>
+            <h2>About the Department</h2>
+            <p>Learning today, shaping the digital future.</p>
+          </div>
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <div class="about-art">
+                <i class="bi bi-braces"></i
+                ><span>0101&nbsp; 1100&nbsp; 1010</span
+                ><small>MASTER OF COMPUTER APPLICATIONS</small>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h3>Welcome to MCA</h3>
+              <p>
+                The Master of Computer Applications programme helps students
+                build strong foundations in computing, programming, databases
+                and emerging technologies.
+              </p>
+              <p>
+                The department encourages conceptual understanding, practical
+                learning, teamwork, problem-solving and innovation through
+                academic activities and projects.
+              </p>
+              <a href="#contact" class="text-link"
+                >Contact the department <i class="bi bi-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="courses" class="section-pad soft-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span>ACADEMICS</span>
+            <h2>Courses & Learning Areas</h2>
+            <p>Explore important subjects in computer applications.</p>
+          </div>
+          <div id="courseList" class="row g-4">
+            <p class="text-center">Loading courses...</p>
+          </div>
+        </div>
+      </section>
+      <section id="faculty" class="section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <span>OUR PEOPLE</span>
+            <h2>Faculty & Staff</h2>
+            <p>Meet the people who support teaching and learning.</p>
+          </div>
+          <div id="facultyList" class="row g-4"><p>Loading faculty...</p></div>
+          <p class="small text-secondary mt-3">
+            Faculty entries are sample placeholders. Replace them with verified
+            department details.
+          </p>
+        </div>
+      </section>
+      <section id="projects" class="section-pad soft-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span>STUDENT CORNER</span>
+            <h2>Student Projects</h2>
+            <p>Examples of practical learning and innovation.</p>
+          </div>
+          <div id="projectList" class="row g-4"></div>
+        </div>
+      </section>
+      <section id="placements" class="section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <span>CAREER DEVELOPMENT</span>
+            <h2>Placement Highlights</h2>
+            <p>Illustrative placement dashboard.</p>
+          </div>
+          <div id="placementList" class="row g-4"></div>
+          <p class="small text-secondary mt-3">
+            Company counts are sample figures for demonstration. Replace them
+            with verified records.
+          </p>
+        </div>
+      </section>
+      <section id="achievements" class="section-pad soft-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span>OUR PROGRESS</span>
+            <h2>Achievements</h2>
+            <p>Celebrating learning, participation and creativity.</p>
+          </div>
+          <div id="achievementList" class="row g-4"></div>
+        </div>
+      </section>
+      <section id="notices" class="section-pad">
+        <div class="container">
+          <div class="section-heading">
+            <span>WHAT'S NEW</span>
+            <h2>Notices & Announcements</h2>
+            <p>Important updates for students.</p>
+          </div>
+          <div id="noticeList" class="notice-list">
+            <p>Loading notices...</p>
+          </div>
+        </div>
+      </section>
+      <section class="section-pad">
+        <div class="container">
+          <div class="cta-panel">
+            <div>
+              <span class="eyebrow">STUDENT CORNER</span>
+              <h2>Curious minds. Creative solutions.</h2>
+              <p>
+                Keep learning, keep experimenting and turn your ideas into
+                reality.
+              </p>
+            </div>
+            <a href="#contact" class="btn btn-warning btn-lg">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="section-pad soft-bg">
+        <div class="container">
+          <div class="section-heading">
+            <span>CONNECT WITH US</span>
+            <h2>Contact the Department</h2>
+            <p>Send a message using the form below.</p>
+          </div>
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <div class="contact-card">
+                <h3>Department Information</h3>
+                <p>
+                  <i class="bi bi-geo-alt"></i> Add verified college address
+                </p>
+                <p>
+                  <i class="bi bi-envelope"></i> Add official department email
+                </p>
+                <p><i class="bi bi-globe"></i> Department website</p>
+                <div class="alert alert-info small">
+                  Update these fields with official department information.
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form id="contactForm" class="contact-form" novalidate>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label" for="name">Your name</label
+                    ><input
+                      id="name"
+                      class="form-control"
+                      required
+                      minlength="2"
+                    />
+                    <div class="invalid-feedback">Enter your name.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label" for="email">Email address</label
+                    ><input
+                      id="email"
+                      type="email"
+                      class="form-control"
+                      required
+                    />
+                    <div class="invalid-feedback">Enter a valid email.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="subject">Subject</label
+                    ><input id="subject" class="form-control" required />
+                    <div class="invalid-feedback">Enter a subject.</div>
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label" for="message">Message</label
+                    ><textarea
+                      id="message"
+                      rows="4"
+                      class="form-control"
+                      required
+                      minlength="10"
+                    ></textarea>
+                    <div class="invalid-feedback">
+                      Message must contain at least 10 characters.
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary btn-lg" type="submit">
+                      Submit Message <i class="bi bi-send ms-1"></i>
+                    </button>
+                  </div>
+                </div>
+                <div id="formFeedback" class="mt-3" aria-live="polite"></div>
+                <p class="small text-secondary mt-2">
+                  Demonstration form: messages are saved in this browser only.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div
+        class="container d-flex flex-column flex-md-row justify-content-between gap-2"
+      >
+        <p class="mb-0">© <span id="year"></span> MCA Department Portal</p>
+        <p class="mb-0">
+          Developed for Web Development Lab · <a href="#home">Back to top ↑</a>
+        </p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
